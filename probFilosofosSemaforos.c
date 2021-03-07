@@ -1,4 +1,5 @@
 //PROBLEMA DE LOS FILÓSOFOS
+//Code created by: @mariacaseiro
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
