@@ -1,6 +1,6 @@
 # Dining Philosopher Problem
-### Solution in C for Dining Philosopher problem
-### Solución en C para el problema de la cena de los filósofos
+### Solution in C with POSIX semaphores, 2 versions: one with process and other with threads.
+### Solución en C con semáforos, 2 versiones: una con procesos y otra con hilos.
 
 -------------------------------------------------------------
 En el código adjuntado se presenta una solución al problema de los **filósofos comilones**, presentado en 1965 por **Edsger Dijkstra** para representar el problema de la sincronización de procesos en un sistema operativo.
@@ -11,7 +11,8 @@ Cinco filósofos se sientan alrededor de una mesa y pasan su vida cenando y pens
 Si dos filósofos adyacentes intentan tomar el mismo tenedor a la vez, se produce una condición de carrera: ambos compiten por tomar el mismo tenedor, y uno de ellos se queda sin comer.
 Si todos los filósofos toman el tenedor que está a su derecha al mismo tiempo, entonces todos se quedarán esperando eternamente, porque alguien debe liberar el tenedor que les falta. Nadie lo hará porque todos se encuentran en la misma situación (esperando que alguno deje sus tenedores). Entonces los filósofos se morirán de hambre. Este bloqueo mutuo se denomina **interbloqueo o deadlock**.
 
-El problema consiste en encontrar un algoritmo que permita que los filósofos nunca se mueran de hambre. Esta solución está basada en el uso de **semáforos**.
+El problema consiste en encontrar un algoritmo que permita que los filósofos nunca se mueran de hambre. 
+Esta solución está basada en el uso de **semáforos**. Además, se incluyen dos implementaciones, una utilizando procesos y otra usando hilos.
 
 -------------------------------------------------------------
 The attached code presents a solution to the problem of **gluttonous philosophers**, presented in 1965 by **Edsger Dijkstra** to represent the problem of process synchronization in an operating system. The interpretation is based on Chinese thinkers, who ate with two chopsticks, where it is more logical that the diner who sits next to him is needed to eat.
