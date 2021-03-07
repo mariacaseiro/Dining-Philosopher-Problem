@@ -1,4 +1,6 @@
 //PROBLEMA DE LOS FILÓSOFOS
+//Code created by: @mariacaseiro
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -19,7 +21,7 @@ y a ponerTenedor() cuando termina. */
 
 /*Dos filósofos consecutivos no podran comer a la
 vez, lo cual se comprobara gracias a la función probar().
-Filosofos -> hilos
+Filosofos -> procesos
 Tenedores -> recursos*/
 
 //Estados de los filosofos
@@ -181,7 +183,7 @@ int main(){
 	para mostrar como seria su correcta implementacion*/
 
 
-  	//Esperamso a que acaben todos los procesos
+  	//Esperamos a que acaben todos los procesos
   	for(i=0;i<maxProcesos;++i){
 		wait(NULL);
 		//ponemos null pq nos de igual el estado de salida
