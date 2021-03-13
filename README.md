@@ -1,4 +1,7 @@
 # Dining Philosopher Problem
+Author: María Caseiro Arias
+
+
 ### Solution in C with POSIX semaphores, 2 versions: one with process and other with threads.
 ### Solución en C con semáforos, 2 versiones: una con procesos y otra con hilos.
 
