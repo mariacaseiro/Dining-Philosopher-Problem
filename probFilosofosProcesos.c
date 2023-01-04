@@ -13,7 +13,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-/* 1. Cada filosofo es un hilo. */
+/* 1. Cada filosofo es un proceso. */
 /* 2. Los filosofos se alternan entre pensar y comer. */
 /* 3. Para similar ambas acciones introduzco un sleep random. */
 /* 4. Llamamos a tomarTenedor() cuando el filosofo quiere comer
